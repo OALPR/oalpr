@@ -6,9 +6,9 @@ from matplotlib import pyplot as plt
 
 img = cv2.imread('test.jpg',0)
 
-laplacian = cv2.Laplacian(img,cv2.CV_8U)
-sobelx = cv2.Sobel(img,cv2.CV_8U,1,0,ksize=5)
-sobely = cv2.Sobel(img,cv2.CV_8U,0,1,ksize=5)
+laplacian = cv2.Laplacian(img,cv2.CV_64F)
+sobelx = cv2.Sobel(img,cv2.CV_64F,1,0,ksize=5)
+sobely = cv2.Sobel(img,cv2.CV_64F,0,1,ksize=5)
 
 plt.subplot(2,2,1),plt.imshow(img,cmap = 'gray')
 plt.title('Original'), plt.xticks([]), plt.yticks([])
