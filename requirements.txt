@@ -6,5 +6,5 @@ numpy==1.22.0
 pyparsing==2.0.2
 python-dateutil==2.2
 six==1.7.3
-tornado==6.4.2
+tornado==6.5.1
 wsgiref==0.1.2
